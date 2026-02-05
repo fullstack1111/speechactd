@@ -111,31 +111,30 @@
             font-weight: bold;
         }
 
-        /* 📱 모바일 가독성 최적화 (F12로 360, 390 체크용) */
+        /* 📱 모바일에서 확실하게 "우와 크다" 소리 나오게 수정 */
         @media (max-width: 600px) {
-            .detail-container {
-                padding: 30px 20px;
-                margin: 10px;
-            }
 
-            .profile-header h1 {
-                font-size: 2.5rem;
-            }
-
+            /* 본문 글씨 크기 (기존보다 훨씬 크게) */
             .career-section {
-                font-size: 1.3rem;
-                line-height: 1.9;
-                word-break: keep-all;
+                font-size: 18px !important;
+                /* 픽셀(px)로 고정해서 확실히 키움 */
+                line-height: 1.7;
             }
 
+            /* 소제목 크기 (스피치 경력 등) */
             .section-title {
-                font-size: 1.6rem;
-                margin: 40px 0 20px;
+                font-size: 24px !important;
+                margin: 40px 0 15px;
             }
 
-            .photo-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
+            /* 프로필 상단 이름 */
+            .profile-header h1 {
+                font-size: 36px !important;
+            }
+
+            /* 지역 이름 (서울, 경기점) */
+            .profile-header span {
+                font-size: 18px !important;
             }
         }
     </style>
